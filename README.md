@@ -1,6 +1,6 @@
 # 📚 Sistema de Gestão de Biblioteca (Library System)
 
-Este projeto é uma aplicação robusta desenvolvida em Java para automatizar as operações de uma biblioteca. O sistema gerencia diversos tipos de itens (Livros, Periódicos, Mídias e Monografias) e diferentes categorias de usuários, aplicando regras de negócio para empréstimos, reservas e penalidades.
+Este projeto é uma aplicação desenvolvida em Java para automatizar as operações de uma biblioteca. O sistema gerencia diversos tipos de itens (Livros, Periódicos, Mídias e Monografias) e diferentes categorias de usuários, aplicando regras de negócio para empréstimos, reservas e penalidades.
 
 ## 🚀 Funcionalidades Principais
 O sistema é operado via console e oferece um fluxo completo de gestão:
@@ -14,11 +14,11 @@ O sistema é operado via console e oferece um fluxo completo de gestão:
 ## 🏗️ Arquitetura e Estrutura de Classes
 O projeto demonstra o uso de conceitos avançados de **Programação Orientada a Objetos**:
 
-* **`Sistema_Biblioteca.java`**: O "Controller" do sistema, contendo toda a lógica de negócio (emprestar, devolver, punir).
+* **`Sistema_Biblioteca.java`**: Contendo toda a lógica de negócio (emprestar, devolver, punir).
 * **`Usuario.java` (Base)**: Classe que define o comportamento comum, estendida por `UsuarioComum` e `UsuarioEspecial` para polimorfismo de limites.
 * **`Item.java` (Base)**: Superclasse para `Livro`, `Midia`, `Periodico` e `Monografia`, utilizando herança para compartilhar atributos como ID, Nome e Autores.
 * **`Emprestimo.java` & `Reserva.java`**: Classes associativas que gerenciam o vínculo entre Usuários e Itens, incluindo controle de datas com `LocalDate`.
-* **`Main.java`**: Interface de usuário (View) que gerencia o menu e a interação via console.
+* **`Main.java`**: Interface de usuário que gerencia o menu e a interação via console.
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
 * **Java 8+ (API `java.time`):** Uso de `LocalDate`, `ChronoUnit` e `DateTimeFormatter` para cálculos precisos de datas de devolução e multas.
